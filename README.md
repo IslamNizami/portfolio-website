@@ -1,5 +1,5 @@
 Islam Nizami — Portfolio
-A modern, responsive personal portfolio for a Backend Software Developer. Built with a focus on high reliability, clean architecture, scalable design, and smooth user interactions.
+A modern, responsive personal portfolio for showing my experience and skills. Built with a focus on high reliability, clean architecture, scalable design, and smooth user interactions.
 
 🚀 Tech Stack
 React & TypeScript – Type-safe component-driven frontend architecture
