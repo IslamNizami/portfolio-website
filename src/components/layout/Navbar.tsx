@@ -24,8 +24,16 @@ export default function Navbar() {
   }, []);
 
   const handleNavClick = (id: string) => {
+    // 1. Önce mobil menüyü kapat
     setMobileOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+    // 2. Mobil menü kapanırken/DOM yenilenirken scroll işlemini güvenli bir gecikmeyle çalıştır
+    setTimeout(() => {
+      const targetElement = document.getElementById(id);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   return (
@@ -40,7 +48,7 @@ export default function Navbar() {
         aria-label="Primary"
         className="relative mx-auto flex max-w-6xl items-center justify-between md:justify-center px-6 py-4 lg:px-8"
       >
-        {/*  */}
+        {/* Masaüstü Menüsü */}
         <ul className="hidden items-center gap-1 md:flex">
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
@@ -70,11 +78,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* */}
+        {/* Mobil Menü Butonu */}
         <div className="flex w-full justify-end md:hidden">
           <button
             type="button"
-            className="text-ink"
+            className="text-ink p-1 focus:outline-none"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
@@ -84,7 +92,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/*  */}
+      {/* Mobil Açılır Menü */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -103,9 +111,9 @@ export default function Navbar() {
                       e.preventDefault();
                       handleNavClick(item.id);
                     }}
-                    className={`block rounded-md px-3 py-2.5 text-base ${
+                    className={`block rounded-md px-3 py-2.5 text-base transition-colors ${
                       activeSection === item.id
-                        ? "text-ink"
+                        ? "text-ink font-medium"
                         : "text-ink-secondary"
                     }`}
                   >
