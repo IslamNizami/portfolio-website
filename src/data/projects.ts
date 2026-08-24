@@ -28,7 +28,7 @@ export const projects: Project[] = [
     title: "LockFocusBot",
     description:
       "A strict productivity Telegram bot built with Spring Boot and PostgreSQL. Unlike standard timers, it enforces discipline through random check-ins and penalizes failures by directly modifying the OS hosts file to block distracting websites.",
-    tech: ["Java", "Spring Boot", "PostgreSQL", "Telegram API"],
+    tech: ["Java", "Spring Boot", "PostgreSQL", "Telegram API","Java NIO","Spring Scheduling"],
     githubUrl: "https://github.com/IslamNizami/lockfocus-telegram-bot",
     featured: true,
     image: "/images/lockfocusbot.jpg", 
