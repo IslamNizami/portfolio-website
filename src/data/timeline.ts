@@ -19,7 +19,7 @@ export const timeline: TimelineItem[] = [
       "Focusing on Software Engineering, Data Structures, Algorithms, and Distributed Systems.",
       "Active Tech Team Member at Google Developer Group (GDG) On Campus BME."
     ],
-    skills: ["Java", "Spring Boot", "Data Structures", "Algorithms"]
+    skills: ["Java", "Spring Boot", "Data Structures", "Algorithms","Software Engineering"]
   },
   {
     id: "exp-1",
@@ -33,4 +33,29 @@ export const timeline: TimelineItem[] = [
     ],
     skills: ["Python", "Desktop App Dev", "UI/UX"]
   }
+  {
+id: "exp-2",
+category: "Experience",
+date: "SEPTEMBER 2026 — PRESENT",
+title: "Programming 3 Lab Instructor",
+subtitle: "Budapest University of Technology and Economics (BME)",
+bullets: [
+"Assist students with Java programming, object-oriented programming, and software development concepts during laboratory sessions.",
+"Support students in understanding programming assignments, debugging code, and applying software engineering principles."
+],
+skills: ["Java", "OOP", "Software Engineering", "Teaching","Swing"]
+},
+{
+id: "exp-3",
+category: "Experience",
+date: "SEPTEMBER 2026 - PRESENT",
+title: "Backend Developer Intern",
+subtitle: "DevLab",
+bullets: [
+"Developing backend applications using Java and Spring Boot, implementing REST APIs and secure application features.",
+"Worked with PostgreSQL, Spring Security, JWT authentication, database migrations, and role-based access control, caching systems"
+],
+skills: ["Java", "Spring Boot", "REST API", "PostgreSQL", "Spring Security", "JWT","Redis","Flyway"]
+}
+
 ];
