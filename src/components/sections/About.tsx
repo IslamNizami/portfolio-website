@@ -92,7 +92,6 @@ export default function About() {
                   >
                     <Card className="h-full">
                       <Icon
-                        // DEĞİŞİKLİK BURADA: Sabit sınıf yerine area.iconClass kullanılıyor
                         className={`h-7 w-7 ${area.iconClass}`}
                         aria-hidden="true"
                       />
