@@ -32,7 +32,7 @@ export const timeline: TimelineItem[] = [
       "Designed and implemented a functional user interface to improve overall usability."
     ],
     skills: ["Python", "Desktop App Dev", "UI/UX"]
-  }
+  },
   {
 id: "exp-2",
 category: "Experience",
